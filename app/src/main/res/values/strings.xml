@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Responsive Demos</string>
+    <string name="circle">circle</string>
+    <string name="heart">heart</string>
+    <string name="title_device_density">Responsive Images/Screen Density</string>
+    <string name="title_vector_drawable">Responsive Images/Vector Drawable</string>
+    <string name="title_tinted_drawable">Responsive Images/Tinted Drawable</string>
+    <string name="title_master_detail">Responsive Layouts/Master+Detail</string>
+    <string name="title_grid_view">Responsive Layouts/Grids</string>
+    <string name="title_mostly_fluid">Responsive Layouts/Mostly Fluid</string>
+    <string name="title_book_detail">Detail</string>
+
+    <string name="hello_world">Hello world!</string>
+
+</resources>
