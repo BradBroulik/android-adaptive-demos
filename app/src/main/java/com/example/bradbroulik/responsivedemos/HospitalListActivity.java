@@ -34,7 +34,7 @@ public class HospitalListActivity extends ActionBarActivity implements HospitalL
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hospital_list);
 
-        if (findViewById(R.id.book_detail_container) != null) {
+        if (findViewById(R.id.hospital_detail_container) != null) {
             // The detail container view will be present only in the
             // large-screen layouts (res/values-large and
             // res/values-sw600dp). If this view is present, then the
@@ -44,7 +44,7 @@ public class HospitalListActivity extends ActionBarActivity implements HospitalL
             // In two-pane mode, list items should be given the
             // 'activated' state when touched.
             ((HospitalListFragment) getFragmentManager()
-                    .findFragmentById(R.id.book_list))
+                    .findFragmentById(R.id.hospital_list))
                     .setActivateOnItemClick(true);
         }
     }
@@ -64,9 +64,8 @@ public class HospitalListActivity extends ActionBarActivity implements HospitalL
             HospitalDetailFragment fragment = new HospitalDetailFragment();
             fragment.setArguments(arguments);
             getFragmentManager().beginTransaction()
-                    .replace(R.id.book_detail_container, fragment)
+                    .replace(R.id.hospital_detail_container, fragment)
                     .commit();
-
         } else {
             // In single-pane mode, simply start the detail activity
             // for the selected item ID.

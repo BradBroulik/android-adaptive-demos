@@ -8,10 +8,10 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 
-import com.example.bradbroulik.responsivedemos.dummy.DummyContent;
+import com.example.bradbroulik.responsivedemos.data.AppData;
 
 /**
- * A list fragment representing a list of Books. This fragment
+ * A list fragment representing a list of Hospitals. This fragment
  * also supports tablet devices by allowing list items to be given an
  * 'activated' state upon selection. This helps indicate which item is
  * currently being viewed in a {@link HospitalDetailFragment}.
@@ -54,7 +54,7 @@ public class HospitalListFragment extends ListFragment {
      * A dummy implementation of the {@link Callbacks} interface that does
      * nothing. Used only when this fragment is not attached to an activity.
      */
-    private static Callbacks sDummyCallbacks = new Callbacks() {
+    private static final Callbacks sDummyCallbacks = new Callbacks() {
         @Override
         public void onItemSelected(String id) {
         }
@@ -71,11 +71,11 @@ public class HospitalListFragment extends ListFragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setListAdapter(new ArrayAdapter<DummyContent.DummyItem>(
+        setListAdapter(new ArrayAdapter<>(
                 getActivity(),
                 android.R.layout.simple_list_item_activated_1,
                 android.R.id.text1,
-                DummyContent.HOSPITALS));
+                AppData.HOSPITALS));
     }
 
     @Override
@@ -115,7 +115,7 @@ public class HospitalListFragment extends ListFragment {
 
         // Notify the active callbacks interface (the activity, if the
         // fragment is attached to one) that an item has been selected.
-        mCallbacks.onItemSelected(DummyContent.HOSPITALS.get(position).id);
+        mCallbacks.onItemSelected(AppData.HOSPITALS.get(position).id);
     }
 
     @Override

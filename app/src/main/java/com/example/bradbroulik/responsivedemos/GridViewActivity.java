@@ -5,7 +5,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.widget.ArrayAdapter;
 import android.widget.GridView;
 
-import com.example.bradbroulik.responsivedemos.dummy.DummyContent;
+import com.example.bradbroulik.responsivedemos.data.AppData;
 
 
 public class GridViewActivity extends ActionBarActivity {
@@ -16,11 +16,11 @@ public class GridViewActivity extends ActionBarActivity {
         setContentView(R.layout.activity_grid_view);
 
         GridView gridview = (GridView) findViewById(R.id.gridview);
-        gridview.setAdapter(new ArrayAdapter<DummyContent.DummyItem>(
+        gridview.setAdapter(new ArrayAdapter<>(
                 this,
                 R.layout.grid_view_item,
                 R.id.grid_view_cell1,
-                DummyContent.HOSPITALS));
+                AppData.HOSPITALS));
     }
 
 }

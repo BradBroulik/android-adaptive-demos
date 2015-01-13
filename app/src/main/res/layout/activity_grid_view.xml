@@ -10,4 +10,4 @@
     android:numColumns="auto_fit"
     android:paddingTop="20sp"
     android:stretchMode="columnWidth"
-    android:verticalSpacing="10sp"></GridView>
+    android:verticalSpacing="10sp" />

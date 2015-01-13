@@ -23,6 +23,7 @@ public class DemosActivity extends ActionBarActivity {
 
 
     @Override
+    @SuppressWarnings("unchecked")
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
@@ -54,7 +55,7 @@ public class DemosActivity extends ActionBarActivity {
     }
 
     private List<Map<String, Object>> getData(String prefix) {
-        List<Map<String, Object>> myData = new ArrayList<Map<String, Object>>();
+        List<Map<String, Object>> myData = new ArrayList<>();
 
         Intent mainIntent = new Intent(Intent.ACTION_MAIN, null);
         mainIntent.addCategory(Intent.CATEGORY_SAMPLE_CODE);
@@ -77,7 +78,7 @@ public class DemosActivity extends ActionBarActivity {
             prefixWithSlash = prefix + "/";
         }
 
-        Map<String, Boolean> entries = new HashMap<String, Boolean>();
+        Map<String, Boolean> entries = new HashMap<>();
 
         for (ResolveInfo info : list) {
             CharSequence labelSeq = info.loadLabel(pm);
@@ -130,7 +131,7 @@ public class DemosActivity extends ActionBarActivity {
     }
 
     private void addItem(List<Map<String, Object>> data, String name, Intent intent) {
-        Map<String, Object> temp = new HashMap<String, Object>();
+        Map<String, Object> temp = new HashMap<>();
         temp.put("title", name);
         temp.put("intent", intent);
         data.add(temp);

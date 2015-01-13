@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 
-import com.example.bradbroulik.responsivedemos.dummy.DummyContent;
+import com.example.bradbroulik.responsivedemos.data.AppData;
 
 /**
  * A fragment representing a single Book detail screen.
@@ -26,7 +26,7 @@ public class HospitalDetailFragment extends Fragment {
     /**
      * The dummy content this fragment is presenting.
      */
-    private DummyContent.DummyItem mItem;
+    private AppData.KeyValueItem mItem;
 
     /**
      * Mandatory empty constructor for the fragment manager to instantiate the
@@ -43,7 +43,7 @@ public class HospitalDetailFragment extends Fragment {
             // Load the dummy content specified by the fragment
             // arguments. In a real-world scenario, use a Loader
             // to load content from a content provider.
-            mItem = DummyContent.HOSPITAL_MAP.get(getArguments().getString(ARG_ITEM_ID));
+            mItem = AppData.HOSPITAL_MAP.get(getArguments().getString(ARG_ITEM_ID));
         }
     }
 
