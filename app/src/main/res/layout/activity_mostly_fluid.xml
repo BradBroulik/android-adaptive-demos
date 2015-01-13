@@ -11,37 +11,25 @@
         android:layout_height="wrap_content">
 
         <TextView
+            style="@style/Widget.TextView.MostlyFluidItem"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="A"
-            android:id="@+id/textView1"
-            android:layout_gravity="center"
-            android:height="150dp"
-            android:background="@color/green_A200"
-            android:gravity="center"
-            android:layout_margin="20dp" />
+            android:background="@color/green_A200" />
 
         <TextView
+            style="@style/Widget.TextView.MostlyFluidItem"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="B"
-            android:id="@+id/textView2"
-            android:layout_gravity="center"
-            android:height="150dp"
-            android:background="@color/green_500"
-            android:gravity="center"
-            android:layout_margin="20dp" />
+            android:background="@color/green_500" />
 
         <TextView
+            style="@style/Widget.TextView.MostlyFluidItem"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="C"
-            android:id="@+id/textView3"
-            android:layout_gravity="center"
-            android:height="150dp"
-            android:background="@color/green_700"
-            android:gravity="center"
-            android:layout_margin="20dp"/>
+            android:background="@color/green_700"/>
 
     </LinearLayout>
 </ScrollView>

@@ -1,5 +1,10 @@
 <resources>
 
-
+    <style name="Widget.TextView.MostlyFluidItem" parent="@android:style/Widget.TextView">
+        <item name="android:height">150dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_margin">20dp</item>
+    </style>
 
 </resources>
