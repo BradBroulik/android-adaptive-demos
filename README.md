@@ -1,2 +1,2 @@
-# android-responsive-demos
-Android Responsive Demos
+# android-adaptive-demos
+Android Adaptive Demos
