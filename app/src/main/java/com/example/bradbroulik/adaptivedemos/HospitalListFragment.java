@@ -1,4 +1,4 @@
-package com.example.bradbroulik.responsivedemos;
+package com.example.bradbroulik.adaptivedemos;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -8,7 +8,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 
-import com.example.bradbroulik.responsivedemos.data.AppData;
+import com.example.bradbroulik.adaptivedemos.data.AppData;
 
 /**
  * A list fragment representing a list of Hospitals. This fragment

@@ -1,11 +1,11 @@
-package com.example.bradbroulik.responsivedemos;
+package com.example.bradbroulik.adaptivedemos;
 
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.widget.ArrayAdapter;
 import android.widget.GridView;
 
-import com.example.bradbroulik.responsivedemos.data.AppData;
+import com.example.bradbroulik.adaptivedemos.data.AppData;
 
 
 public class GridViewActivity extends ActionBarActivity {

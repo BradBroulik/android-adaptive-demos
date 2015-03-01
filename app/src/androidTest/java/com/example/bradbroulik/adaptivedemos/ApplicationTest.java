@@ -1,4 +1,4 @@
-package com.example.bradbroulik.responsivedemos;
+package com.example.bradbroulik.adaptivedemos;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

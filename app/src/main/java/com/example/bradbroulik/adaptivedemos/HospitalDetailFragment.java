@@ -1,4 +1,4 @@
-package com.example.bradbroulik.responsivedemos;
+package com.example.bradbroulik.adaptivedemos;
 
 import android.os.Bundle;
 import android.app.Fragment;
@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 
-import com.example.bradbroulik.responsivedemos.data.AppData;
+import com.example.bradbroulik.adaptivedemos.data.AppData;
 
 /**
  * A fragment representing a single Book detail screen.

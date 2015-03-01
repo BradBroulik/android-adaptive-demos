@@ -1,4 +1,4 @@
-package com.example.bradbroulik.responsivedemos.data;
+package com.example.bradbroulik.adaptivedemos.data;
 
 import java.util.ArrayList;
 import java.util.HashMap;

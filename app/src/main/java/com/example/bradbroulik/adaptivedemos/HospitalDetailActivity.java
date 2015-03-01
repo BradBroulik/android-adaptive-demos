@@ -1,4 +1,4 @@
-package com.example.bradbroulik.responsivedemos;
+package com.example.bradbroulik.adaptivedemos;
 
 import android.content.Intent;
 import android.os.Bundle;
