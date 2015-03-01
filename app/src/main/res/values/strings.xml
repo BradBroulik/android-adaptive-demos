@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Responsive Demos</string>
+    <string name="app_name">Adaptive Demos</string>
     <string name="circle">circle</string>
     <string name="heart">heart</string>
-    <string name="title_device_density">Responsive Images/Screen Density</string>
-    <string name="title_vector_drawable">Responsive Images/Vector Drawable</string>
-    <string name="title_tinted_drawable">Responsive Images/Tinted Drawable</string>
-    <string name="title_master_detail">Responsive Layouts/Master+Detail</string>
-    <string name="title_grid_view">Responsive Layouts/Grids</string>
-    <string name="title_mostly_fluid">Responsive Layouts/Mostly Fluid</string>
+    <string name="title_device_density">Adaptive Images/Screen Density</string>
+    <string name="title_vector_drawable">Adaptive Images/Vector Drawable</string>
+    <string name="title_tinted_drawable">Adaptive Images/Tinted Drawable</string>
+    <string name="title_master_detail">Adaptive Layouts/Master+Detail</string>
+    <string name="title_grid_view">Adaptive Layouts/Grids</string>
+    <string name="title_mostly_fluid">Adaptive Layouts/Mostly Fluid</string>
     <string name="title_book_detail">Detail</string>
 
 </resources>
