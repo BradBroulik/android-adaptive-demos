@@ -17,6 +17,19 @@
             </intent-filter>
         </activity>
         <activity
+            android:name="com.example.bradbroulik.adaptivedemos.ArtDirectionActivity"
+            android:label="@string/title_art_direction" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.bradbroulik.adaptivedemos.DemosActivity" />
+        </activity>
+        <activity
             android:name="com.example.bradbroulik.adaptivedemos.ScreenDensityActivity"
             android:label="@string/title_device_density" >
             <intent-filter>

@@ -4,6 +4,7 @@
     <string name="app_name">Adaptive Demos</string>
     <string name="circle">circle</string>
     <string name="heart">heart</string>
+    <string name="title_art_direction">Adaptive Images/Art Direction</string>
     <string name="title_device_density">Adaptive Images/Screen Density</string>
     <string name="title_vector_drawable">Adaptive Images/Vector Drawable</string>
     <string name="title_tinted_drawable">Adaptive Images/Tinted Drawable</string>
