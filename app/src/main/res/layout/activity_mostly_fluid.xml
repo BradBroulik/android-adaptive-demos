@@ -15,21 +15,21 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="A"
-            android:background="@color/green_A200" />
+            android:background="@color/cyan_100" />
 
         <TextView
             style="@style/Widget.TextView.MostlyFluidItem"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="B"
-            android:background="@color/green_500" />
+            android:background="@color/purple_100" />
 
         <TextView
             style="@style/Widget.TextView.MostlyFluidItem"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="C"
-            android:background="@color/green_700"/>
+            android:background="@color/yellow_100"/>
 
     </LinearLayout>
 </ScrollView>

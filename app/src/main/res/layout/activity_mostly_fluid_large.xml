@@ -14,7 +14,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="A"
-            android:background="@color/green_A200" />
+            android:background="@color/cyan_100" />
 
         <LinearLayout
             android:layout_width="fill_parent"
@@ -26,7 +26,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="B"
-                android:background="@color/green_500"
+                android:background="@color/purple_100"
                 android:layout_weight="1"
                 />
 
@@ -35,7 +35,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="C"
-                android:background="@color/green_700"
+                android:background="@color/yellow_100"
                 android:layout_weight="1"
                  />
         </LinearLayout>
