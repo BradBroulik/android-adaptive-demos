@@ -74,4 +74,5 @@ public class HospitalListActivity extends ActionBarActivity implements HospitalL
             startActivity(detailIntent);
         }
     }
+
 }

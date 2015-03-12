@@ -4,6 +4,7 @@
     <string name="app_name">Adaptive Demos</string>
     <string name="circle">circle</string>
     <string name="heart">heart</string>
+    <string name="title_action_bars">Adaptive Content/Action Bars</string>
     <string name="title_art_direction">Adaptive Images/Art Direction</string>
     <string name="title_device_density">Adaptive Images/Screen Density</string>
     <string name="title_vector_drawable">Adaptive Images/Vector Drawable</string>
@@ -12,5 +13,12 @@
     <string name="title_grid_view">Adaptive Layouts/Grids</string>
     <string name="title_mostly_fluid">Adaptive Layouts/Mostly Fluid</string>
     <string name="title_book_detail">Detail</string>
+    <string name="action_search">Search</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_favorite">Favorite</string>
+    <string name="action_share">Share</string>
+    <string name="title_activity_action_bar">ActionBarActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
 
 </resources>
