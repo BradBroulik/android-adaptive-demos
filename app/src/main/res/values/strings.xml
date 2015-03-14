@@ -5,6 +5,7 @@
     <string name="circle">circle</string>
     <string name="heart">heart</string>
     <string name="title_action_bars">Adaptive Content/Action Bars</string>
+    <string name="title_activity_tabs">Adaptive Content/Tabs</string>
     <string name="title_art_direction">Adaptive Images/Art Direction</string>
     <string name="title_device_density">Adaptive Images/Screen Density</string>
     <string name="title_vector_drawable">Adaptive Images/Vector Drawable</string>
@@ -17,8 +18,8 @@
     <string name="action_refresh">Refresh</string>
     <string name="action_favorite">Favorite</string>
     <string name="action_share">Share</string>
-    <string name="title_activity_action_bar">ActionBarActivity</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
 
 </resources>

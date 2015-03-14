@@ -120,6 +120,20 @@
             android:label="@string/title_action_bars" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.bradbroulik.adaptivedemos.DemosActivity" />
+        </activity>
+        <activity
+            android:name=".TabsActivity"
+            android:label="@string/title_activity_tabs" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
             <meta-data

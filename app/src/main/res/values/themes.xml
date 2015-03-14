@@ -21,6 +21,9 @@
 
         <!-- You can also set colorControlNormal, colorControlActivated
              colorControlHighlight & colorSwitchThumbNormal. -->
+
+        <!-- Tabs -->
+        <item name="actionBarTabTextStyle">@style/TabTextStyle</item>
     </style>
 
 </resources>
