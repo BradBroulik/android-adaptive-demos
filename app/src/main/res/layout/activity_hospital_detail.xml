@@ -3,5 +3,6 @@
     android:id="@+id/book_detail_container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.bradbroulik.adaptivedemos.HospitalDetailActivity"
-    tools:ignore="MergeRootFrame" />
+    tools:context=".HospitalDetailActivity"
+    tools:ignore="MergeRootFrame"
+    tools:listitem="@layout/grid_item"/>

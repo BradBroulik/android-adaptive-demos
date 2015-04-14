@@ -25,11 +25,13 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-
-    sourceSets {
-        main {
-            svg.srcDir 'src/main/svg'
-        }
+// Uncomment for victor https://github.com/trello/victor
+//    sourceSets {
+//        main {
+//            svg.srcDir 'src/main/svg'
+//        }
+//    }
+    productFlavors {
     }
 }
 
