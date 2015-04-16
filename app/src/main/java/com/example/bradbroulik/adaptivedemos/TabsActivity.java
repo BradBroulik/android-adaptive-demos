@@ -5,6 +5,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.View;
@@ -37,7 +38,7 @@ public class TabsActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tabs);
 
-        getActionBarToolbar();
+        Toolbar toolbar = getActionBarToolbar();
         getSupportActionBar().setTitle(getString(R.string.title_activity_tabs).split("/")[1]);
 
         mSectionsPagerAdapter =  new SectionsPagerAdapter(getSupportFragmentManager());
@@ -46,7 +47,7 @@ public class TabsActivity extends BaseActivity {
         mViewPager.setAdapter(mSectionsPagerAdapter);
 
         mTabLayout = (SlidingTabLayout) findViewById(R.id.tabs);
-        mTabLayout.setDistributeEvenly(true); // To make the Tabs Fixed set this true, This makes the tabs Space Evenly in Available width
+        mTabLayout.setDistributeEvenly(false); // To make the Tabs Fixed set this true, This makes the tabs Space Evenly in Available width
 
         mTabLayout.setCustomTabColorizer(new SlidingTabLayout.TabColorizer() {
             @Override
