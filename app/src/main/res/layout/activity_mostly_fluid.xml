@@ -1,36 +1,43 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:scrollbars="none">
+    android:layout_height="wrap_content">
 
-    <LinearLayout
-        android:id="@+id/layout"
-        android:orientation="vertical"
+    <include layout="@layout/toolbar_actionbar" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
 
-        <TextView
-            style="@style/Widget.TextView.MostlyFluidItem"
+        <LinearLayout
+            android:id="@+id/layout"
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="A"
-            android:background="@color/cyan_100" />
+            android:layout_height="wrap_content">
 
-        <TextView
-            style="@style/Widget.TextView.MostlyFluidItem"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="B"
-            android:background="@color/purple_100" />
+            <TextView
+                style="@style/Widget.TextView.MostlyFluidItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A"
+                android:background="@color/cyan_100" />
 
-        <TextView
-            style="@style/Widget.TextView.MostlyFluidItem"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="C"
-            android:background="@color/yellow_100"/>
+            <TextView
+                style="@style/Widget.TextView.MostlyFluidItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="B"
+                android:background="@color/purple_100" />
 
-    </LinearLayout>
-</ScrollView>
+            <TextView
+                style="@style/Widget.TextView.MostlyFluidItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="C"
+                android:background="@color/yellow_100"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

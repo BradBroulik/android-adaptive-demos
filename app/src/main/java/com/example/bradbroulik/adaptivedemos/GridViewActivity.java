@@ -1,19 +1,21 @@
 package com.example.bradbroulik.adaptivedemos;
 
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.widget.ArrayAdapter;
 import android.widget.GridView;
 
 import com.example.bradbroulik.adaptivedemos.data.AppData;
 
 
-public class GridViewActivity extends ActionBarActivity {
+public class GridViewActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_grid_view);
+
+        getActionBarToolbar();
+        getSupportActionBar().setTitle(getString(R.string.title_grid_view).split("/")[1]);
 
         GridView gridview = (GridView) findViewById(R.id.gridview);
         gridview.setAdapter(new ArrayAdapter<>(

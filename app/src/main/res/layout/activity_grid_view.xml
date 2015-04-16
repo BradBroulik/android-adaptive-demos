@@ -1,16 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<GridView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/gridview"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:clipToPadding="false"
-    android:columnWidth="200sp"
-    android:gravity="center"
-    android:horizontalSpacing="20sp"
-    android:numColumns="auto_fit"
-    android:paddingTop="20sp"
-    android:stretchMode="columnWidth"
-    android:verticalSpacing="10sp"
-    tools:context=".GridViewActivity"
-    tools:listitem="@layout/grid_view_item"/>
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GridViewActivity">
+
+    <include layout="@layout/toolbar_actionbar" />
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:columnWidth="200sp"
+            android:gravity="center"
+            android:horizontalSpacing="20sp"
+            android:numColumns="auto_fit"
+            android:paddingTop="20sp"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="10sp"
+            tools:context=".GridViewActivity"
+            tools:listitem="@layout/grid_view_item"/>
+
+    </FrameLayout>
+</LinearLayout>

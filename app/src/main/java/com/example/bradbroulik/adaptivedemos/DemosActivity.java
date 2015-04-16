@@ -4,7 +4,8 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -19,8 +20,7 @@ import java.util.List;
 import java.util.Map;
 
 
-public class DemosActivity extends ActionBarActivity {
-
+public class DemosActivity extends BaseActivity {
 
     @Override
     @SuppressWarnings("unchecked")
@@ -29,11 +29,17 @@ public class DemosActivity extends ActionBarActivity {
 
         setContentView(R.layout.activity_demos);
 
+        Toolbar toolbar = getActionBarToolbar();
+
         Intent intent = getIntent();
         String path = intent.getStringExtra("Path");
 
         if (path == null) {
+            toolbar.setNavigationIcon(null); // Don't show up navigation on first screen.
+            getSupportActionBar().setTitle(R.string.app_name);
             path = "";
+        } else {
+            getSupportActionBar().setTitle(path);
         }
 
         ListView listView = (ListView) findViewById(R.id.listView);
@@ -51,7 +57,6 @@ public class DemosActivity extends ActionBarActivity {
                 startActivity(intent);
             }
         });
-
     }
 
     private List<Map<String, Object>> getData(String prefix) {
@@ -137,4 +142,19 @@ public class DemosActivity extends ActionBarActivity {
         data.add(temp);
     }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        if (id == android.R.id.home) {
+            // This ID represents the Home or Up button. In the case of this
+            // activity, the Up button is shown. For
+            // more details, see the Navigation pattern on Android Design:
+            //
+            // http://developer.android.com/design/patterns/navigation.html#up-vs-back
+            //
+            navigateUpTo(new Intent(this, DemosActivity.class));
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
 }

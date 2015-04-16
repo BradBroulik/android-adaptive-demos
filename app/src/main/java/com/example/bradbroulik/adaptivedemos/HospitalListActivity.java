@@ -2,7 +2,6 @@ package com.example.bradbroulik.adaptivedemos;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 
 
 /**
@@ -21,7 +20,7 @@ import android.support.v7.app.ActionBarActivity;
  * {@link HospitalListFragment.Callbacks} interface
  * to listen for item selections.
  */
-public class HospitalListActivity extends ActionBarActivity implements HospitalListFragment.Callbacks {
+public class HospitalListActivity extends BaseActivity implements HospitalListFragment.Callbacks {
 
     /**
      * Whether or not the activity is in two-pane mode, i.e. running on a tablet
@@ -33,6 +32,9 @@ public class HospitalListActivity extends ActionBarActivity implements HospitalL
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hospital_list);
+
+        getActionBarToolbar();
+        getSupportActionBar().setTitle(getString(R.string.title_master_detail).split("/")[1]);
 
         if (findViewById(R.id.hospital_detail_container) != null) {
             // The detail container view will be present only in the

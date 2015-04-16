@@ -6,139 +6,99 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme.Green" >
+        android:theme="@style/AppTheme.Green">
         <activity
-            android:name=".DemosActivity"
-            android:label="@string/app_name" >
+            android:name=".DemosActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".ArtDirectionActivity"
-            android:label="@string/title_art_direction" >
+            android:label="@string/title_art_direction"
+            android:parentActivityName=".DemosActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
-
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.bradbroulik.adaptivedemos.DemosActivity" />
         </activity>
         <activity
             android:name=".ScreenDensityActivity"
-            android:label="@string/title_device_density" >
+            android:label="@string/title_device_density"
+            android:parentActivityName=".DemosActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
-
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.bradbroulik.adaptivedemos.DemosActivity" />
         </activity>
         <activity
             android:name=".VectorDrawableActivity"
-            android:label="@string/title_vector_drawable" >
+            android:label="@string/title_vector_drawable"
+            android:parentActivityName=".DemosActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
-
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.bradbroulik.adaptivedemos.DemosActivity" />
         </activity>
         <activity
             android:name=".TintedDrawableActivity"
-            android:label="@string/title_tinted_drawable" >
+            android:label="@string/title_tinted_drawable"
+            android:parentActivityName=".DemosActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
-
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.bradbroulik.adaptivedemos.DemosActivity" />
         </activity>
         <activity
             android:name=".HospitalListActivity"
-            android:label="@string/title_master_detail" >
+            android:label="@string/title_master_detail"
+            android:parentActivityName=".DemosActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
-
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.bradbroulik.adaptivedemos.DemosActivity" />
         </activity>
         <activity
             android:name=".GridViewActivity"
-            android:label="@string/title_grid_view" >
+            android:label="@string/title_grid_view"
+            android:parentActivityName=".DemosActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
-
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.bradbroulik.adaptivedemos.DemosActivity" />
         </activity>
         <activity
             android:name=".MostlyFluidActivity"
-            android:label="@string/title_mostly_fluid" >
+            android:label="@string/title_mostly_fluid"
+            android:parentActivityName=".DemosActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
-
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.bradbroulik.adaptivedemos.DemosActivity" />
         </activity>
         <activity
             android:name=".HospitalDetailActivity"
-            android:label="@string/title_book_detail"
-            android:parentActivityName=".HospitalListActivity" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.bradbroulik.adaptivedemos.HospitalListActivity" />
+            android:label="@string/title_detail"
+            android:parentActivityName=".HospitalListActivity">
         </activity>
         <activity
             android:name=".ActionBarItemsActivity"
-            android:label="@string/title_action_bars" >
+            android:label="@string/title_action_bars"
+            android:parentActivityName=".DemosActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
-
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.bradbroulik.adaptivedemos.DemosActivity" />
         </activity>
         <activity
             android:name=".TabsActivity"
-            android:label="@string/title_activity_tabs" >
+            android:label="@string/title_activity_tabs"
+            android:parentActivityName=".DemosActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.bradbroulik.adaptivedemos.DemosActivity" />
         </activity>
     </application>
 

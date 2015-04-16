@@ -2,7 +2,7 @@
 
     <!-- Base application theme. -->
 
-    <style name="AppTheme.Green" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme.Green" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
 
         <!-- colorPrimary is used for the default action bar background -->
@@ -15,14 +15,15 @@
              which is used to tint widgets -->
         <item name="colorAccent">@color/green_A200</item>
 
+        <item name="colorControlNormal">@color/white</item>
+
         <!-- Window colors -->
         <item name="android:windowBackground">@color/white</item>
 
-        <!-- You can also set colorControlNormal, colorControlActivated
-             colorControlHighlight & colorSwitchThumbNormal. -->
-
         <!-- Tabs -->
         <item name="actionBarTabTextStyle">@style/TabTextStyle</item>
+
+        <!--<item name="textColorPrimary">@color/white</item>-->
     </style>
 
 </resources>
