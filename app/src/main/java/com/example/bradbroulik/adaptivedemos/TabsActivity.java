@@ -47,7 +47,7 @@ public class TabsActivity extends BaseActivity {
         mViewPager.setAdapter(mSectionsPagerAdapter);
 
         mTabLayout = (SlidingTabLayout) findViewById(R.id.tabs);
-        mTabLayout.setDistributeEvenly(false); // To make the Tabs Fixed set this true, This makes the tabs Space Evenly in Available width
+        mTabLayout.setDistributeEvenly(true); // Set this to false for fixed width tabs;  Set to true for evenly weighted tabs that fill available width
 
         mTabLayout.setCustomTabColorizer(new SlidingTabLayout.TabColorizer() {
             @Override
