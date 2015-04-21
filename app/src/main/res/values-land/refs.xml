@@ -7,4 +7,5 @@
     http://developer.android.com/training/multiscreen/screensizes.html#TaskUseAliasFilters
     -->
     <item type="layout" name="activity_hospital_list">@layout/activity_hospital_twopane</item>
+    <item type="layout" name="activity_mostly_fluid">@layout/activity_mostly_fluid_large</item>
 </resources>
