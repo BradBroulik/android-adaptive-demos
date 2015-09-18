@@ -39,6 +39,7 @@ public class HospitalDetailActivity extends BaseActivity {
                     getIntent().getStringExtra(HospitalDetailFragment.ARG_ITEM_ID));
             HospitalDetailFragment fragment = new HospitalDetailFragment();
             fragment.setArguments(arguments);
+//            fragment.setArguments(getIntent().getExtras());  A simpler way of forwarding the extras (replaces lines 37-41).
             getFragmentManager().beginTransaction()
                     .add(R.id.book_detail_container, fragment)
                     .commit();
