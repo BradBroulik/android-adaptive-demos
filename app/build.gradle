@@ -12,7 +12,7 @@ apply plugin: 'com.trello.victor'
 
 android {
     compileSdkVersion 23
-    buildToolsVersion '23.0.1'
+    buildToolsVersion '22.0.1'
     defaultConfig {
         applicationId 'com.example.bradbroulik.adaptivedemos'
         minSdkVersion 16
