@@ -23,8 +23,8 @@ public class DemosActivityTest {
 
     @Test
     public void testDemosActivity_whenLaunched_thenDisplayExpectedToolbarTitle() throws Exception {
-        onView(allOf(isDescendantOfA(withId(R.id.toolbar_actionbar)), withText(R.string.app_name)))
-                .check(matches(isDisplayed()));
+        onView(allOf(isDescendantOfA(withId(R.id.toolbar_actionbar)), withText(R.string.app_name)))      // ViewMatcher
+                .check(matches(isDisplayed()));                                                          // ViewAssertion
     }
 
 }
